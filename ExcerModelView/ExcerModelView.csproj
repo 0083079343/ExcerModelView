@@ -137,10 +137,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -151,6 +153,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DbMasoudContext.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\ViewModelsUser\List.cs" />
     <Compile Include="OtherClasses\HashPass.cs" />
     <Compile Include="OtherClasses\PersianCulture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
