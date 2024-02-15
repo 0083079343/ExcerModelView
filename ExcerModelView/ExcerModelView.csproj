@@ -146,14 +146,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202402141205235_CreateDb.cs" />
-    <Compile Include="Migrations\202402141205235_CreateDb.designer.cs">
-      <DependentUpon>202402141205235_CreateDb.cs</DependentUpon>
+    <Compile Include="Migrations\202402150400287_createdbupdate.cs" />
+    <Compile Include="Migrations\202402150400287_createdbupdate.designer.cs">
+      <DependentUpon>202402150400287_createdbupdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DbMasoudContext.cs" />
     <Compile Include="Models\User.cs" />
-    <Compile Include="Models\ViewModelsUser\List.cs" />
+    <Compile Include="Models\ViewModelsUser\UserList.cs" />
     <Compile Include="OtherClasses\HashPass.cs" />
     <Compile Include="OtherClasses\PersianCulture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -208,6 +208,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Views\User\List.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -219,8 +220,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202402141205235_CreateDb.resx">
-      <DependentUpon>202402141205235_CreateDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202402150400287_createdbupdate.resx">
+      <DependentUpon>202402150400287_createdbupdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -7,7 +7,7 @@ using System.Web;
 
 namespace ExcerModelView.Models.ViewModelsUser
 {
-    public class List
+    public class UserList
     {
         [Display(Name = "نام")]
         [Required(ErrorMessage = "فیلد {0} اجباری است!")]

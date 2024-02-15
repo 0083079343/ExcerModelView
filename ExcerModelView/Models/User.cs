@@ -47,7 +47,8 @@ namespace ExcerModelView.Models
         [Display(Name = "تاریخ عضویت")]
         [Required(ErrorMessage = "فیلد {0} اجباری است!")]
         public DateTime RegisterDate { get; set; }
-
+        [Display(Name = "عکس کاربر")]
+        public string Image { get; set; }
 
     }
 }
