@@ -42,5 +42,34 @@ namespace ExcerModelView.Controllers
         }
 
 
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult Login([Bind(Include = "Phone,Password")] LoginViewModel login)
+        {
+
+            if (ModelState.IsValid)
+            {
+                var FindId = db.Users.FirstOrDefault(t => t.Phone == login.Phone && t.Password == login.Password);
+
+                if (FindId == null)
+                {
+                    ModelState.AddModelError("Phone", "نام کاربری یا رمز عبور اشتباه است");
+                    return View(login);
+                }
+                else
+                {
+                    return View("Index");
+                }
+            }
+            return View();
+        }
+
+
     }
 }

@@ -7,13 +7,13 @@ namespace ExcerModelView.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class createdbupdate : IMigrationMetadata
+    public sealed partial class createdb : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(createdbupdate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(createdb));
         
         string IMigrationMetadata.Id
         {
-            get { return "202402150400287_createdbupdate"; }
+            get { return "202402161701160_createdb"; }
         }
         
         string IMigrationMetadata.Source

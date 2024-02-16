@@ -39,7 +39,7 @@
         <th>
             @Html.DisplayNameFor(model => model.RegisterDate)
         </th>
-        <br />
+  
         <th>
             @Html.DisplayNameFor(model => model.Image)
         </th>
@@ -84,7 +84,7 @@
     <td>
         @Html.DisplayFor(modelItem => item.RegisterDate.Year)
     </td>
-    <br />
+
     <td>
         <img src="~/images/@item.Image" style="width:120px;height:120px;border-radius:120px" />
         @*@Html.DisplayFor(modelItem => item.Image)*@
@@ -103,4 +103,4 @@
 
 
 
-@Html.Action("List");
+@*@Html.Action("List")*@
